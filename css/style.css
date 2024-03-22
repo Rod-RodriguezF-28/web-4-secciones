@@ -1,0 +1,168 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 1 rem equivale a 16px por lo tanto en 2.5rem hay 40px */
+h1 {font-size: 2.5rem;}
+
+h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0; /*Equivale a margen arriba y abajo de 10px*/
+}
+
+a{text-decoration: none;}
+
+
+/* Utility Classes */
+.container {
+    margin: auto; /* Margen automático para centrar horizontalmente */
+    max-width: 1300px; /* Ancho definido para el elemento */
+    overflow: auto; /* Añade barras de desplazamiento si es necesario */
+    padding: 0 20px; /* Espaciado interno en los lados del contenedor */
+}
+
+.large {font-size: 1.25rem;}
+
+.text-orange {color: #e84b2a;}
+
+.text-light {font-weight: lighter;}
+
+.display-1 {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 50px; /* Espaciado interno */
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.btn-light {
+    background: #c84b2a;
+    border: 1px solid #c84b2a;
+    color: #fff;
+}
+
+.btn-outline {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-dark {
+    background: #6c757d;
+    border: 1px solid #6c757d;
+    color: #fff;
+}
+
+.showcase-row {
+    padding-top: 40px;
+}
+/* Header */
+#mainheader {
+    min-height: 100vh;  /* El encabezado ocupará toda la altura del viewport o de la ventana del navegador */
+    
+}
+
+/* Navbar*/
+
+#mainnavbar {
+    overflow: auto;
+}
+
+#mainnavbar a {
+    color: #6c757d;
+}
+
+#mainnavbar .logo {
+    float: left;
+    padding-top: 30px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+#mainnavbar ul {
+    list-style: none;
+    float: right;
+    text-transform: uppercase;
+}
+
+#mainnavbar ul li {
+    float: left;
+}
+
+#mainnavbar ul li a {
+    display: block;
+    padding: 40px 30px; /* Espaciado interno */
+    text-align: center;
+}
+
+#mainnavbar ul li a:hover,
+#mainnavbar ul li a.current {
+    background: #e84b2a;
+    color: #fff;
+}
+
+/* showcase */
+.showcase {
+    background: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* cover que se estire y se ajuste */
+    background-position: center;
+    text-align: right;
+    padding-top: 200px;
+    padding-bottom: 90px;
+    color: #fff;
+}
+
+.showcase h1 {
+    padding-left: 300px;
+}
+
+.showcase p {
+    padding-left: 300px;
+    padding-top: 20px;
+}
+
+#mainfooter {
+    background: #e84b2a;
+    text-align: center;
+    padding-top: 40px;
+    height: 10vh;
+}
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover,
+.github-button:focus {
+    background-color: #555;
+    text-decoration: none;
+}

@@ -1,0 +1,210 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 1 rem equivale a 16px por lo tanto en 2.5rem hay 40px */
+h1 {font-size: 2.5rem;}
+
+h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0; /*Equivale a margen arriba y abajo de 10px*/
+}
+
+a{text-decoration: none;}
+
+/* Utility Classes */
+.container {
+    margin: auto; /* Margen automático para centrar horizontalmente */
+    max-width: 1300px; /* Ancho definido para el elemento */
+    overflow: auto; /* Añade barras de desplazamiento si es necesario */
+    padding: 0 20px; /* Espaciado interno en los lados del contenedor */
+}
+
+.text-gray {color: #6c757d;}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 50px; /* Espaciado interno */
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.btn-dark {
+    background: #6c757d;
+    border: 1px solid #6c757d;
+    color: #fff;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+form .form-group {
+    margin-bottom: 16px;
+}
+
+form .form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+    background-color: #f2f3f6;
+    border-radius: 4px;
+    border: 1px solid #f2f3f6;
+}
+
+#bodyheader {
+    height: 20vh;
+}
+
+#navbar {
+    background: #e84b2a;
+    color: #fff;
+    overflow: auto;
+}
+
+#navbar a {
+    color: #fff;
+}
+
+#navbar .logo {
+    float: left;
+    padding-top: 30px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+    text-transform: uppercase;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 40px 30px; /* Espaciado interno */
+    text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #6c757d;
+}
+
+/* About */
+#about {
+    color: #091726;
+    height: 70vh;
+    padding-top: 50px; /* Espaciado interno */
+}
+
+#about h2,
+#about p {
+    padding-bottom: 20px;
+}
+
+.about-left {
+    float: left;
+    width: 50%;
+    padding-right: 40px;
+}
+
+.about-left .large {
+    font-weight: 600;
+}
+
+.about-right {
+    float: right;
+    width: 50%;
+    padding-left: 40px;
+}
+
+/* Services */
+#services {
+    height: 80vh;
+    padding-top: 50px;
+}
+
+#services h2 {
+    padding-bottom: 50px;
+}
+
+.services-box {
+    float: left;
+    width: 33%;
+    padding: 20px;
+}
+
+.services-box img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/* Contact */
+#contact {
+    min-height: 60vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contact h2 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#contact form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#contact .btn {
+    width: 100%;
+    border: 5px;
+}
+
+#mainfooter {
+    background: #e84b2a;
+    text-align: center;
+    padding-top: 40px;
+    min-height: 10vh;
+}
+.github-button {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover,
+.github-button:focus {
+    background-color: #555;
+    text-decoration: none;
+}
